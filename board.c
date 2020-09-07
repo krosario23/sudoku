@@ -130,8 +130,8 @@ bool find_empty(Board* b, int* x, int* y) {
 
 //backtracking algorithm which solves a given board
 bool solve(Board* b, int x, int y) {
-     print_board(b);
-     getchar();
+     //print_board(b);
+     //getchar();
 
      //if there are no empty cells, we are done
      if (!find_empty(b, &x, &y)) return true;
@@ -191,6 +191,7 @@ static bool is_empty(Board* b) {
 bool fill_board(Board* b) {
      assert(is_empty(b));
      seed_board(b);
+     print_board(b);
      int count = 0;
      if(solve(b, rand() % GRIDSIZE, rand() % GRIDSIZE)) return true;
 
