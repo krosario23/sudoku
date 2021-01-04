@@ -1,2 +1,3 @@
 # sudoku
-suck my pp :p
+to run, navigate to the directory in the terminal and enter 
+``` make ```
